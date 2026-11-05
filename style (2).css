@@ -1,0 +1,157 @@
+/* ==========================================
+   1. ESTILOS GENERALES Y RESET
+   ========================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #121212; /* Fondo oscuro general */
+    color: #e0e0e0;            /* Texto claro legible */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    padding: 0 15px;
+}
+
+/* ==========================================
+   2. ENCABEZADO Y NAVEGACIÓN
+   ========================================== */
+header {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    border-bottom: 3px solid #d32f2f; /* Toque rojo deportivo */
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+
+header h2 {
+    color: #b0b0b0;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+nav {
+    background-color: #1a1a1a;
+    padding: 12px 0;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: #cccccc;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover, 
+nav a.activo {
+    color: #ff4d4d; /* Rojo brillante al pasar el mouse o estar activo */
+}
+
+/* ==========================================
+   3. TIPOGRAFÍA Y CONTENIDO PRINCIPAL
+   ========================================== */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+    color: #b5b5b5;
+}
+
+/* ==========================================
+   4. TARJETAS Y CONTENEDORES (Competidores, etc.)
+   ========================================== */
+div {
+    background-color: #1e1e1e;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+div img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* ==========================================
+   5. TABLAS Y DETALLES (Resultados)
+   ========================================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #181818;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+th {
+    background-color: #252525;
+    color: #ffffff;
+}
+
+details {
+    background-color: #181818;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #2a2a2a;
+    margin-bottom: 20px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #ff4d4d;
+}
+
+/* ==========================================
+   6. PIE DE PÁGINA (FOOTER)
+   ========================================== */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    border-top: 1px solid #2a2a2a;
+    margin-top: 40px;
+    color: #777777;
+}
+
+footer a {
+    color: #ff4d4d;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
